@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head><title>Registration Form</title>
+<link rel="stylesheet" type="text/css" href="CSS.css">
+</head>
+<body>
+<h6 >Please Enter your details :</h6><br>
+<div id="f">
+<fieldset style="margin-left:150px;">
+<legend>Personal Details-</legend>
+<form class="it">
+<label for="firstname">First Name:-</label>
+<input  type="text" name="firstname" id="firstname" placeholder="Enter your first name" required>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+<label for="lastname">Last Name:-</label>
+<input   type="text" name="lastname" id="lastname" placeholder="Enter your last name" /><br><br>
+
+<label for="username">User Name:-</label>
+<input  type="text" name="username" id="username" placeholder="Enter your user name" required/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+<label for="pass">Password:-</label>
+<input  type="password" name="pass" id="pass" placeholder="Enter your passcode" required/><br><br><br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<label for="confirm">Confirm Password:-</label>
+<input  type="password" name="pass" id="confirm" placeholder="Confirmation Passcode" required /><br><br>
+
+<label for="gender">Gender:-</label>
+<input  type="radio" name="gender" id="gender" value="M" />Male&emsp;&emsp;&emsp;&nbsp;
+<input type="radio" name="gender" id="gender" value="F" />Female&emsp;&emsp;&emsp;&nbsp;
+<input  type="radio" name="gender" id="gender" value="O" />Other<br><br><br>
+
+<label for="state">Choose the state you are from:-</label>&emsp;
+<select id="state" ><br><br>
+	<option>Andhra Pradesh</option>
+	<option>Mumbai</option>
+	<option>Chattisgarh</option>
+	<option>Delhi</option>
+	<option>Haryana</option>
+	<option>Himachal Pradesh</option>
+	<option>China</option>
+	<option>Goa</option>
+	<option>Nepal</option>
+	<option>Kerala</option>
+	<option>Punjab</option>
+	<option>Arunanchal Pradesh</option>
+</select><br><br>
+
+<label for="hobby">Your Hobbies:-</label>
+<input  type="checkbox" name="hobby" id="hobby"  />Reading Books<br>&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<input  type="checkbox" name="hobby" id="hobby"  />Playing Games<br>&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<input type="checkbox" name="hobby" id="hobby"  />Watching Movies<br>&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<input  type="checkbox" name="hobby" id="hobby"  />Travelling<br>&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<input  type="checkbox" name="hobby" id="hobby"  />Hanging out with friends<br>
+
+<br><br><br>
+<label for="comment">Leave a Message :</label><br><br>
+<textarea id="comment" rows="5" cols="40" placeholder="Why do you want to become a member of this.Let us know :)"></textarea>
+</fieldset><br>
+</div>
+
+<div class="submission">
+<button name="submit">Submit</button><br><br>
+<button name="reset" >reset</button
+</div>
+</form>
+</body>
+</html>

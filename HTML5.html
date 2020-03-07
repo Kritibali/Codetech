@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head><title>Loops in Python</title>
+<link rel="stylesheet" type="text/css" href="CSS.css">
+</head>
+<body>
+		<body>
+				<div class="search">
+						<a href="https://www.google.com/"><input type="image" src="searchwhite.png" 
+						 alt="Google search" title="Google Search"	width="50px" height="45px" ></a>
+					
+						</div>
+			<div class="head-section">
+					<h1>&lt;CODE&gt; tech</h1>
+					<h5>------- Python Loops  -------- </h5>
+			</div>
+			<br><br>
+			<div class="navbar">
+			<ul>
+			<li><a  href="HTML1.html" title="Basic Python"> 1 </a></li>
+			<li><a  href="HTML2.html" title="Python Tokens"> 2 </a></li>
+			<li><a  href="HTML3.html" title="Operators"> 3 </a></li>
+			<li><a  href="HTML4.html" title="Decision statements"> 4 </a></li>
+			<li><a  href="HTML5.html" title="Loops"> 5 </a></li>
+			<li><a  href="HTML6.html" title="Functions"> 6 </a></li>
+			<li><a  href="HTML7.html" title="Registration Form"> 7 </a></li>
+			</ul>
+			</div><br>
+	<fieldset>
+	<legend>Intro to Loops</legend>
+	If we want o repeat the code multiple times,Python provides two types of loop statements viz. <em> while </em>and <em>for loops. </em>
+	<p>Points to remember :-</p>
+	<ul>
+	<li>The while loop is <u><em>condition controlled.</em></u></li>
+	<li>The for loop is <u><em>count controlled </u>which repeats for specific no. of times.</em></li>
+	</ul> 
+	</fieldset>
+	
+	<div class="paragraph">
+	<ol>
+	<li>The 'while' loop :</li>
+	<p>It executes a sequence of statements repeatedly as long as given condition is true.<br><em><strong>Syntax:</strong></em><br> while test-condition :<br>&nbsp;&nbsp;&nbsp;#body of loop<br>&nbsp;&nbsp;&nbsp;statement(s)</p>
+	<h3>Flow chart for while loop:</h3>
+	<img style="margin-left:600px;margin-top:20px;margin-bottom:20px;  
+	border-bottom-right-radius:15px;"
+	src="https://tse3.mm.bing.net/th?id=OIP.1UsCxwV0EHVIW5FihFLAkQHaHJ&pid=Api&rs=1" width="380" height="200">
+
+	<li>The 'for' loop :</li>
+	<p>This loop is used to iterate over a sequence.</strong></em><br>for var in sequence :<br>&nbsp;&nbsp;&nbsp;statement(s)&nbsp;&nbsp;&nbsp;- - - - - - - - - -<br>&nbsp;&nbsp;&nbsp;- - - - - - - - -<br>Eg: for i in range(1,4) :<br>&nbsp;&nbsp;>>>print(i)<br>
+	
+	<img style="margin-left:600px;margin-top:20px;margin-bottom:20px;  
+	border-bottom-right-radius:15px;"
+	src="https://tse1.mm.bing.net/th?id=OIP.p-YU8W5ppZnWIUjqtc4s4QHaER&pid=Api&rs=1" width="380" height="200">
+	
+	<table style="background-color:rgba(255,255,255,0.1);padding:10px;border-bottom-right-radius:15px;"border="0" cellpadding="3" cellspacing="2">
+	<tr  align="center">
+	<th>Output :</th>
+	</tr>
+	<tr  align="center">
+	<td>1</td>
+	</tr>
+	<tr  align="center">
+	<td>2</td>
+	</tr>
+	<tr  align="center">
+	<td>3</td>
+	</tr>
+	</table><br></p>
+
+	<li>Nested loops</li>
+	<p>Loops within the loop is called <em><strong>'Nested Loop'.</strong></em>.For one iteration of outside loop, the inner loop will executed till condition is true. Flow chart is given below.<br><br>
+
+	<h2>The 'range()' function :</h2>
+	<p>It is inbuilt function to generate a list of numbers.The general form of the range function is :<br><em><strong>range(begin , end , step) .</strong></em>
+	<ul >
+	<strong>'begin'</strong> is the first beginning. It is inclusive.  <br>
+	<strong>'end' </strong>is the limit upto which list goes and it is exclusive. <br>
+	<strong>'step'</strong>is the difference between each number of the list .   <br>
+	<img style="margin-left:600px;margin-top:20px;margin-bottom:20px;  
+	border-bottom-right-radius:15px;"
+	src="https://tse1.mm.bing.net/th?id=OIP.iK5pqkSiqIb7YLhXj8QwtQHaEz&pid=Api&rs=1" width="380" height="200" alt="Illustration of nested loop"><br>
+	</ul>
+	<p><strong>Some of the examples are :</strong><br>
+	<ol id="list">
+	<span id="one">&emsp;&emsp;&emsp;list(range(1,20,2))<br> 	&emsp;&emsp;&emsp;->[1,3,5,7,9,11,13,15,17,19] <br><br></span><br>
+		<span id="two">&emsp;&emsp;&emsp;list(range(1,6))<br>&emsp;&emsp;&emsp;->[1,2,3,4,5]  <br><br></span><br>
+			<span id="three">&emsp;&emsp;&emsp;list(range(5,0,-2)<br>&emsp;&emsp;&emsp;->[5,3,1]    <br><br></span><br>
+				<span id="four">&emsp;&emsp;&emsp;list(range(0)<br>&emsp;&emsp;&emsp;->empty  <br><br></span><br>
+					<span id="five">&emsp;&emsp;&emsp;list(range(-4,4,2))<br>&emsp;&emsp;&emsp;>->[-4,-2,0,2]  <br><br></span><br>
+	</ol>
+	</div>
+	
+	<h2>The 'break' statement :</h2>
+	<div class="paragraph">
+	The keyword 'break' allows us to terminate a loop. When break statement is encountered inside a loop, the loop is immidiately terminated and the program control goes to the first statement following the loop.<br>
+	</div>
+	<br>
+	<div class="paragraph2">
+	<h3>Working of break statement in loops :</h3>
+	<p>while test-Boolean-exp :<br>&nbsp;&nbsp;&nbsp;body of while <br>&nbsp;&nbsp;&nbsp;if condition :<br>&nbsp;&nbsp;&nbsp;&nbsp;break
+	&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;body of loop<br>&nbsp;&nbsp;&nbsp;statement(s)&nbsp;
+</p></div><br>
+
+
+	
+	<h2>The 'continue' statement :</h2>
+	<div class="paragraph">The continue statement is opposite of break.When continue is encountered within a loop, the remaining statements within the body are skipped but the loop condition
+	is checked to see if loop should continue or exit.
+	</div>
+	
+	
+	<section id="button">
+		Read More ?
+		<p><a href="HTML6.html"><input type="button" name=" " value=" YES !"></a></p>
+	</section>
+
+		
+		   <div class="footer">
+				<ul>
+					<li>For any info :  </li>
+					<dd>Contact-7865432145</dd>
+					<dd>Mail at - kritibali99@gmail.com</dd>
+				</ul>
+				<div class="socialmedia">
+						<i class="fa fa-facebook-official" title="Visit facebook" aria-hidden="true"></i>
+						<i class="fa fa-instagram" title="Visit Instagram" aria-hidden="true"></i>
+						<i class="fa fa-twitter" title="Visit Twitter" aria-hidden="true"></i>
+						<i class="fa fa-google-plus-square" title="Visit Google+" aria-hidden="true"></i>
+						<i class="fa fa-youtube-play"  title="Visit Youtube" aria-hidden="true"></i>
+				
+				</div>
+				
+					<div class="links">
+				<a  href="HTML2.html" > Python Tokens </a><br>
+				<a  href="HTML3.html" > Operators </a><br>
+				<a  href="HTML4.html" > Desicion Statements </a><br>
+				<a  href="HTML5.html"> Loops </a><br>
+				<a  href="HTML6.html" title="Next Page"> Functions </a><br>
+				<a  href="HTML7.html"> Registration Form </a><br>
+	
+					</div>
+				<p><b>No copyright infringement &copy. All rights reserved.<b></p>
+				</div>
+				
+				</body>
+				</html>

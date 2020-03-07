@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head><title>Functions</title>
+<link rel="stylesheet" href="CSS.css" type="text/css">
+</head>
+<body>
+
+		<body>
+				<div class="search">
+						<a href="https://www.google.com/"><input type="image" src="searchwhite.png" 
+						 alt="Google search" title="Google Search"	width="50px" height="45px" ></a>
+					
+						</div>
+			<div class="head-section">
+					<h1>&lt;CODE&gt; tech</h1>
+					<h5>------- Python Functions  -------- </h5>
+			</div>
+			<div class="navbar">
+			<ul>
+			<li><a  href="HTML1.html" title="Basic Python"> 1 </a></li>
+			<li><a  href="HTML2.html" title="Python Tokens"> 2 </a></li>
+			<li><a  href="HTML3.html" title="Operators"> 3 </a></li>
+			<li><a  href="HTML4.html" title="Decision statements"> 4 </a></li>
+			<li><a  href="HTML5.html" title="Loops"> 5 </a></li>
+			<li><a  href="HTML6.html" title="Functions"> 6 </a></li>
+			<li><a  href="HTML7.html" title="Registration Form"> 7 </a></li>
+			</ul>
+			</div>
+
+<br>
+<fieldset style="text-align:center;">
+	<legend>Introduction to functions</legend>
+<p class="field">
+	With the help of functions an entire program can be divided into small independent modules. Each small module is called a function.<br>
+	<strong>Syntax and basics : </strong>
+	A function is a self contained block of one or more statements that performs a special task when called.<br/><strong>Syntax :</strong><br/>def name_of_function(Parameters)
+	<br/>statement 1<br/>statement 2<br/> statement 3<br/>-----------------<br/>-----------------<br/>statement N<br/>
+	Syntax contains <i>header</i> and <i>body</i>. The function header begins with 'def' keyword.The def keyword signifies the beginning of functions's definition.
+
+	<br>Eg:def print_msg():<br>&emsp;&emsp;str1=input("Please enter your name :")<br>&emsp;&emsp;print("Dear ", str1 ,"Welcome to Python Tutorials .")<br/>print_msg() .
+</p>
+</fieldset><br>
+
+<div class="main">
+<h2>Parameters and Arguments in function :</h2>
+Parameters are used to give inputs to a function.They are specified with a pair of paranthesis.<br>Eg:printMax(10,20)----->Here <i>printMax</i> is 
+the function name and 10,20 are parameters/arguments of function.
+<br><br>
+
+<h2>Positional Arguments :</h2>
+The parameters are assigned by default according to their position.<br>Eg:def display(Name,Age)<br>&emsp;&emsp;print("Name= ",Name,"Age= ",Age)<br>
+display("John",25)<br>display(40,"Rishab")------>#40 goes to Name and Rishab goes to Age<br>display("John")-----><strong>Error !!</strong><br>
+<strong><em>Note:</em></strong>First argument binds to the first parameter and the second argument binds to second parameter. This style of matching
+up arguments and parameter is called <strong><u>'positional argument style'</u></strong>
+<br><br>
+
+<h2>Keyword Arguments :</h2>
+An alternative to postitional argument is keyword argument. This can be done by typing <i>parameter_name=value</i> in the function call.<br><strong>Syntax:</strong>def display(Name,Age):<br>&emsp;&emsp;print("Name= ",Name)<br>display(Age="24",Name="john")<br>
+<br><br>
+
+<h2>Parameter with Default value :</h2>
+We can provide default values to a parameter using assignment(=) operator.<br>Eg: def greet(name,msg="Welcome"):<br>&emsp;&emsp;print("Hello",name,msg)<br>&emsp;greet("Sachin")<br><strong>Output:</strong>Hello Sachin Welcome
+<br><br>
+
+<h2>The Local and Global scope of variable :</h2>
+Variables that are initialised within a function including parameters are said to exist in function's local scope.
+<ul>
+	<li>Variables that exist in local scope are called <u><strong> Local Variables. </strong></u></li>
+	<li>Variables that are assigned outside functions are said to be <u><strong>Global Variables.</strong></u></li>
+</ul>
+<br><br>
+
+<h2>The 'return' statement :</h2><br>
+The return statement is used to return a value from the function also break out from function.It can return multiple values.
+<br><br>
+
+<h2>Assign returned multiple values to variable :</h2>
+
+It is also possible for a function to return multiple values and assign the returned multiple values to multiple variables.<br>Eg:def compute(num1):<br>
+&emsp;&emsp;print("Number =",num1)<br> &emsp;&emsp;return num1*num1,num1*num1*num1<br>square,cube=compute(4)<br>print("square=",square, "cube=",cube)------><strong>Output : Number=4<br>&emsp;&emsp;Square=16&emsp; Cube=64</strong>
+<br><br>
+
+
+<h2>Recursive functions :</h2>
+A function is repetitively called by itself.A function is said to be recursive if a statement within the body of function calls itself.
+<br><br>
+
+<h2>The 'LAMBDA' function :</h2>
+They are also known as anonymous functions. These functions are not bound to a name.They only have code to execute that is execute that is associated with them.<br><strong>Syntax :</strong>
+Name=lambda(variable):code<br>Eg: def func(X) :<br>&emsp;&emsp; return(X*X*X)
+<br>&emsp;print(func(3))--------->Output = 27:)
+</div>
+
+
+
+<section id="button">
+	Read More ?
+	<p><a href="HTML7.html"><input type="button" name=" " value=" YES !"></a></p>
+</section>
+
+
+<div class="footer">
+		<ul>
+			<li>For any info :  </li>
+			<dd>Contact-7865432145</dd>
+			<dd>Mail at - kritibali99@gmail.com</dd>
+		</ul>
+		<div class="socialmedia">
+				<i class="fa fa-facebook-official" title="Visit facebook" aria-hidden="true"></i>
+				<i class="fa fa-instagram" title="Visit Instagram" aria-hidden="true"></i>
+				<i class="fa fa-twitter" title="Visit Twitter" aria-hidden="true"></i>
+				<i class="fa fa-google-plus-square" title="Visit Google+" aria-hidden="true"></i>
+				<i class="fa fa-youtube-play"  title="Visit Youtube" aria-hidden="true"></i>
+		
+		</div>
+		
+			<div class="links">
+		<a  href="HTML2.html" > Python Tokens </a><br>
+		<a  href="HTML3.html" > Operators </a><br>
+		<a  href="HTML4.html" > Desicion Statements </a><br>
+		<a  href="HTML5.html"> Loops </a><br>
+		<a  href="HTML6.html" > Functions </a><br>
+		<a  href="HTML7.html" title="Fill Registration Form">Form</a>
+			</div>
+		<p><b>No copyright infringement &copy. All rights reserved.<b></p>
+		</div>
+		
+		</body>
+		</html>
